@@ -1,0 +1,70 @@
+*{box-sizing:border-box}
+body{
+    margin:0;
+    font-family:Georgia,"Times New Roman",serif;
+    background:#efe6d5;
+    color:#3f2d20;
+}
+.container{width:92%;max-width:1140px;margin:32px auto}
+h1{
+    color:#5c3d2e;
+    border-bottom:4px double #8b5e3c;
+    padding-bottom:10px;
+    margin-bottom:5px;
+}
+.subtitle{color:#7a5c49;font-style:italic;margin-top:0}
+.note{
+    background:#fffaf0;
+    border:1px solid #c8ad8b;
+    padding:14px;
+    box-shadow:3px 3px 0 #d8c3a5;
+}
+.box{
+    background:#fffaf0;
+    border:1px solid #bfa789;
+    padding:22px;
+    margin-top:22px;
+    box-shadow:4px 4px 0 #d7c2a5;
+}
+.box h2{color:#5c3d2e}
+.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+label{display:block;margin-bottom:6px;font-weight:bold}
+input,select,textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #b89b7a;
+    background:#fffdf7;
+    font-family:Georgia,"Times New Roman",serif;
+}
+.btn{
+    background:#6f4e37;
+    color:#fff7ed;
+    border:0;
+    padding:10px 16px;
+    margin-top:14px;
+    cursor:pointer;
+    text-decoration:none;
+    display:inline-block;
+}
+.cancel{display:inline-block;background:#d8c3a5;color:#3f2d20;padding:9px 14px;text-decoration:none;margin-left:5px}
+.message{background:#e8f0dc;color:#3f6212;padding:12px;margin-top:15px}
+.table-header{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.search{display:flex;gap:6px;align-items:center}
+.search input{width:220px}
+.search .btn{margin-top:0}
+.table-container{overflow-x:auto}
+table{width:100%;border-collapse:collapse}
+th{background:#5c3d2e;color:#fffaf0;padding:11px}
+td{padding:10px;border-bottom:1px solid #cfb89c}
+tr:nth-child(even) td{background:#f8f0e3}
+.actions{display:flex;gap:6px}
+.actions form{margin:0}
+.edit,.delete{padding:6px 10px;border:0;text-decoration:none;cursor:pointer}
+.edit{background:#d8c3a5;color:#3f2d20}
+.delete{background:#a63d40;color:white}
+@media(max-width:700px){
+.form-grid{grid-template-columns:1fr}
+.table-header{flex-direction:column;align-items:stretch}
+.search{flex-wrap:wrap}
+.search input{width:100%}
+}
